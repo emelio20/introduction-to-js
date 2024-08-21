@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f2dd6c; /* added a light gray background */
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added a subtle shadow */
+  border-radius: 10px; /* added rounded corners */
+}
+
+#task-list li {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff; /* added a white background for each list item */
+  transition: background-color 0.2s ease-in-out; /* added a transition effect */
+}
+
+#task-list li:hover {
+  background-color: #f5f5f5; /* added a hover effect */
+}
+
+#task-list li:last-child {
+  border-bottom: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #666; /* added a gray color for completed tasks */
+}
+
+.delete-button {
+  float: right;
+  cursor: pointer;
+  font-size: 18px; /* increased font size for delete button */
+  color: #666; /* added a gray color for delete button */
+}
+
+.delete-button:hover {
+  color: #ff0000; /* changed to a brighter red on hover */
+  transform: scale(1.1); /* added a scale effect on hover */
+}
